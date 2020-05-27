@@ -1,0 +1,285 @@
+/* base */
+body {
+    position: relative;
+    font-family: sans-serif, Tahoma, Helvetica, Arial, '微軟正黑體';
+}
+body:before {
+    content: ' ';
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.05;
+}
+.section_title {
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+.content {
+    color: #777;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+/* navbar */
+.show_bgcolor {
+    opacity: 1;
+    color: #d1d1d1;
+    background: #373b44; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #4286f4,
+        #373b44
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #4286f4,
+        #373b44
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#navbar .nav-link:hover {
+    color: rgb(160, 186, 241) !important;
+}
+/* section */
+.section {
+    margin: 25px auto;
+}
+.news_section {
+    padding: 30px 10px;
+    background-color: #0a1426;
+    /* background-image: linear-gradient(125deg, #142544 0%, #1d3e7a 70%, #275cb6 100%); */
+}
+.CFP_section {
+    padding: 30px 10px;
+    background-image: linear-gradient(125deg, #142544 0%, #1d3e7a 70%, #275cb6 100%);
+}
+.committee_section {
+    padding: 40px 10px;
+    background-color: #0a1426;
+}
+.keynote_section {
+    margin-bottom: 50px;
+}
+.invited_section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(125deg, #142544 0%, #1d3e7a 70%, #275cb6 100%);
+    padding: 50px;
+}
+.accomodation_section {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-image: linear-gradient(-225deg, #22e1ff 0%, #1d8fe1 48%, #625eb1 100%);
+}
+.patrons_section {
+    padding: 50px;
+    background-image: linear-gradient(125deg, #142544 0%, #1d3e7a 70%, #275cb6 100%);
+}
+/* About section */
+.about_section {
+    border-right: 1px solid #aaa;
+}
+/* News section */
+.time_row1 {
+    width: 30%;
+}
+#news_table th,
+td:first-child {
+    text-align: center;
+}
+news-section a,
+a:hover {
+    color: #1d3e7a !important;
+    text-decoration: none !important;
+}
+/* Schedule section */
+.time_row2 {
+    width: 12%;
+    text-align: center;
+}
+.schedule_date {
+    text-align: center;
+    padding: 10px;
+    margin: 10px 20px;
+    cursor: pointer;
+    transition: 1s;
+    -webkit-transition: 0.5s;
+}
+.schedule_date:after {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-top-color: #ffffff00;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    -webkit-transition: 0.5s;
+}
+.schedule_date_foucs {
+    text-align: center;
+    padding: 10px;
+    margin: 10px 20px;
+    color: #ffffff;
+    transition: 1s;
+    -webkit-transition: 0.5s;
+    background-color: #0080ff;
+}
+.schedule_date_foucs:after {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-top-color: #0080ff;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    -webkit-transition: 0.5s;
+}
+/* CFP section */
+.CFP_button {
+    padding: 1rem 0;
+    border: 4px solid #fff;
+    border-radius: 0.3rem;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    color: #fff;
+    background-color: inherit;
+    -webkit-transition: 0.5s;
+    outline: none;
+}
+.CFP_button:hover {
+    background-color: #04084c;
+}
+.CFP_button a,
+a:hover {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+.CFP-title {
+    margin: 30px auto;
+}
+.CFP_content {
+    letter-spacing: 1.5px;
+    font-size: 1.2rem;
+}
+/* Submission & Registration section */
+.submission_content {
+    margin-bottom: 20px;
+    padding: 0px 10px;
+}
+.submission_content a:hover {
+    color: #518ae3 !important;
+}
+.submission_table td,
+.submission_table th {
+    text-align: center;
+    padding: 10px 0px !important;
+}
+/* committee section */
+.committee_section strong,
+svg {
+    color: #518ae3;
+}
+.committee_section button {
+    text-decoration: none !important;
+    padding: 0;
+}
+.committee_section .card {
+    background-color: inherit;
+    border: 0px;
+    border-top: 0.5px solid #888;
+    border-radius: 0px;
+}
+.committee_section .card:last-child {
+    border-bottom: 0.5px solid #888;
+}
+.accordion {
+    width: 100%;
+}
+/* Keynote section */
+
+/* Invited section */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: 400;
+}
+.marketing .col-lg-4 p {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.invited_section .btn:hover {
+    background-color: #1d3e7a;
+    -webkit-transition: 0.5s;
+}
+.invited_section .btn:focus {
+    background-color: #1d3e7a;
+    -webkit-transition: 0.5s;
+}
+/* Venue section */
+.venue_card {
+    max-width: 90%;
+    margin: 0 auto;
+}
+.venue_title {
+    letter-spacing: 4px;
+}
+.venue_content {
+    letter-spacing: 2px;
+}
+/* Patrons section */
+
+/* Bottom */
+.bottomBox {
+    text-align: center;
+    background-color: #363636;
+    padding: 20px 0px 10px 0px;
+}
+.bottomBox span {
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+.bottomList {
+    margin-bottom: 20px;
+    color: #0080ff;
+    margin: 1.5rem;
+}
+.bottomtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+.bottomInfo {
+    color: black;
+    font-weight: bold;
+}

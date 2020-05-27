@@ -1,0 +1,1099 @@
+	/*Reset*/
+	html, body, div, span, nav{
+	  margin: 0;
+	  padding: 0;
+	  border: 0;	  
+	  font: inherit;
+	  vertical-align: baseline;		
+	  font-family: sans-serif;
+	}
+	
+	/***************
+	     NAV
+	****************/
+	body{
+		background-color:#F2F2F2;
+		
+	}
+	.header{ /*nav of black line*/
+	  position:fixed;
+	  top:0%;
+	  width: 100%;
+	  height: 70px;
+	  margin: 0 auto;
+	  background:#1C1C1C;
+	  z-index:1;
+	  letter-spacing:1px;
+	}	
+		
+	.container{
+		position:relative;		
+		display: inline-block;
+		width:49%;		
+		height:70px;		
+	}
+	#home{
+		position:absolute;
+		top:25%;
+		font-size:32px;			
+		margin-left:30px;
+		font-weight:bold;
+	}
+	#signin{	
+		position:absolute;
+		display: inline-block;
+		top:30%;	
+		right:250px;
+		margin-left:25%;
+		padding:7px;
+		width:85px;	
+		height:20px;		
+		line-height:20px;		
+		font-size:22px;	
+		text-align:center;
+		font-weight:bold;		
+	}	
+	#signup{ 			
+		position:absolute;
+		display: inline-block;
+		top:20%;	
+		right:50px;
+		padding:7px;
+		width:100px;	
+		height:30px;		
+		line-height:30px;
+		border:2px white ridge;
+		border-radius:5px;
+		font-size:22px;	
+		text-align:center;
+		font-weight:bold;
+	}
+	#user{
+		position:absolute;
+		display: inline-block;
+		top:25%;	
+		left:-5%;
+		padding-bottom:6px;
+		font-size:32px;	
+		text-align:center;		
+	}		
+		#user:hover{
+			border-bottom:4px white solid;			
+			transition:0.3s;
+		}
+	#sign_out{
+		position:absolute;
+		display: inline-block;
+		top:35%;	
+		right:3%;
+		color:white;
+		cursor:pointer;
+		font-size: 28px;
+	}
+		a[href="signup.php"]:hover, a[href="index.php"]:hover, a[href="signin.php"]:hover, #sign_up:hover{
+			color:#E0E0E0;				
+		}		
+		#signup:hover{
+			border-color:#E0E0E0;			
+		}				
+		a{ /*font*/		 
+			text-decoration: none;/*remove hyper link underline*/
+			color:white;	  
+		}
+.counterBox{
+	width:100%;	
+	text-align:center;
+	background-color: #FCFCFC;
+	font-size:24px;	
+	vertical-align: middle;
+	font-family:Comic Sans MS;
+	margin-top: 100px;
+}
+
+.content{
+	clear: both;
+}
+	
+	/***************
+		top image	
+	***************/
+	.top_box{	
+		position:relative;			
+		background-image:url(../../images/slide01.jpg);/* from css file*/
+		background-repeat:no-repeat;
+		background-size:cover;
+		margin:0px auto ;
+		height:600px;
+		width:100%;		
+		background-color:white;/*if can not catch image*/
+		box-shadow: #666 0 0 5px;/*image shadow*/		
+	}
+	.top_text{	
+		position:relative;
+		padding-top:300px;
+		padding-left:10%;
+		color:white;
+		font-size:36px;
+		font-weight:bold;
+		line-height:15px;/*text center*/
+		letter-spacing:1px;
+	}	
+	#top_hyper{
+		position: relative;
+		top:15px;
+		font-size:16px;
+		text-decoration: none;
+		color:white;
+		line-height:40px;
+		border:3px white solid;
+		border-radius:2px;		
+		padding:15px;
+		font-weight: bold;
+	}
+		#top_hyper:hover{
+			background-color:#7A918D;			
+			transition:0.5s; 
+		}
+	/***************
+		two box	
+	***************/
+	.half_box{
+		display: inline-block;	
+		margin:50px auto;
+		width:750px;				
+	}
+	.halfbox_box{
+		width:100%;
+		text-align: center;
+	}
+	.half_inner_top{
+		margin:5px auto 0px auto;
+		width:97%;		
+		overflow:hidden;			
+		/*border:2px pink solid;*/
+	}		
+		.half_inner_top:hover div{		
+			transform:scale(1.1,1.1);
+			transition:0.7s;		
+			overflow:hidden;
+		}	
+	.half_inner_bottom{		
+		margin:0px auto 5px auto;
+		width:97%;		
+		background-color:white;
+		border:2px white solid;
+		border-radius:5px;
+	}	
+	.half_inner_contentBox{
+		position: relative;		
+		margin: 0px auto 0px auto;
+		padding:50px 50px 10px 50px;
+		width:75%;
+		/*border:2px black solid;*/
+	}		
+	#half_inner_image{
+		width:100%;
+		height:450px;
+		overflow: hidden;
+	}	
+	#half_inner_title{
+		width:80%;		
+		margin:50px auto 35px auto;
+		text-align:center;
+		font-size:50px;
+		letter-spacing:1px;
+		font-weight:bold;
+	}	
+	#half_inner_content{
+		width:90%;
+		margin:0px auto;
+		text-align:center;	
+		font-size:28px;
+	}	
+	#half_inner_href{
+		width:200px;
+		height:60px;
+		line-height:60px;	
+		margin:100px auto 100px auto;
+		text-align:center;		
+		border:2px #AAAAAA solid ;
+		border-radius:2px;
+		font-size:22px;
+	}	
+		#half_inner_href:hover{
+			background-color: #DDDDDD;
+			transition:0.3s;		
+			opacity: 0.7;	
+		}
+	/***************
+		bottom
+	***************/
+	.bottom_box{
+		position:relative;
+		margin:0px auto 0px auto;
+		width:100%;
+		background-color:black;
+	}
+	.bottom_title{
+		position:relative;		
+		width:260px;
+		height:50px;
+		margin:0px auto -40px auto;			
+		text-align:center;
+		background-color:black;
+		line-height:50px;
+		font-size:30px;		
+		color:white;
+		border-radius:5px;
+		letter-spacing:1.5px;
+		z-index:1;
+	}	
+	.bottom_box_left{
+		position:relative;
+		padding-top:60px;
+		text-align:center;
+		margin-left:-2%;
+		margin-bottom:10px;
+	}
+	.bottom_icon_box{
+		position:relative;
+		display:inline-block;		
+		margin-left:2%;
+		padding:5px;
+		margin-bottom:20px;
+		color:#AAAAAA;
+	}		
+	.copy_right{
+		color:white;
+		text-align:center;
+		margin:20px auto 0px auto;
+		height:30px;
+		font-size:14px;
+	}
+
+	
+	
+	/***************
+	    Sign up 
+	****************/
+	.signup_border{		
+	  width:800px;
+	  margin: 10% auto;
+	  background-color:white;
+	  border:solid 	#46A3FF 2px;
+	  border-radius:5px;
+	  padding:30px 30px 0px 30px;
+	}
+	#signup_logo{
+	  text-align:center;
+	  font-size:36px;
+	  margin-top:-10px;
+	  margin-bottom:5px;
+	}
+	fieldset{
+	  border-color:#BEBEBE;
+	  border-style: solid;	
+	  border-radius:10px;
+	}
+	#signup_1{
+		width:80%;
+		margin: 0px auto;
+	}
+
+	.text{
+	  width:100%;	
+	  height:48px;
+	  background-color:#FAFBFC;
+	  margin:0px 5px 0px 5px;
+	  padding:4px 8px;
+	  border-radius:5px;
+	}
+		.text:hover, .realname:hover{
+		  background-color:	#FFFFFF;
+		  border:1.5px #0080FF ridge;		  
+		  
+		}
+		.text:focus, .realname:hover{
+		  background-color:	#FFFFFF;
+		  border:1.5px #0080FF ridge;
+		  outline:none; /*hidden the auto outline o */
+		}
+	.realname{
+		width:65%;	
+		height:48px;
+		background-color:#FAFBFC;
+		margin:0px 5px 0px 5px;
+		padding:4px 8px;
+		border-radius:5px;
+	}
+	#legend_p{
+	  margin:25px auto 8px 8px;
+	  font-size: 24px;
+	  font-weight:bold;/*bold*/	 	   
+	}
+		#legend{
+		  font-size:30px;
+		  text-align:center;		    
+		}
+	/**Next button**/
+	#signup_next {
+		position: relative;
+		height: 50px;
+		margin:50px auto 0px auto;
+		padding: 12px 24px;
+		border: 1px solid #0e60c5;
+		border-radius: 8px;
+		background: #1ab5ff;
+		background: -webkit-gradient(linear, left top, left bottom, from(#1ab5ff), to(#0e60c5));
+		background: -moz-linear-gradient(top, #1ab5ff, #0e60c5);
+		background: linear-gradient(to bottom, #1ab5ff, #0e60c5);
+		-webkit-box-shadow: #1fd9ff 0px 0px 8px 0px;
+		-moz-box-shadow: #1fd9ff 0px 0px 8px 0px;
+		box-shadow: #1fd9ff 0px 0px 8px 0px;
+		text-shadow: #2565db 1px 1px 1px;
+		font: normal normal bold 20px arial;
+		color: #ffffff;
+		text-decoration: none;
+	}
+		#signup_next:hover,
+		#signup_next:focus {
+			border: 1px solid #1071e8;
+			background: #1fd9ff;
+			background: -webkit-gradient(linear, left top, left bottom, from(#1fd9ff), to(#1173ec));
+			background: -moz-linear-gradient(top, #1fd9ff, #1173ec);
+			background: linear-gradient(to bottom, #1fd9ff, #1173ec);
+			color: #ffffff;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		#signup_next:active {
+			background: #0e60c5;
+			background: -webkit-gradient(linear, left top, left bottom, from(#0e60c5), to(#0e60c5));
+			background: -moz-linear-gradient(top, #0e60c5, #0e60c5);
+			background: linear-gradient(to bottom, #0e60c5, #0e60c5);
+		}
+		/***Submit button*/
+	#signup_submit {
+		position: relative;
+		height: 50px;
+		margin:50px auto 0px auto;
+		width:100%;
+		padding: 12px 24px;
+		border: 1px solid #0e60c5;
+		border-radius: 8px;
+		background: #1ab5ff;
+		background: -webkit-gradient(linear, left top, left bottom, from(#1ab5ff), to(#0e60c5));
+		background: -moz-linear-gradient(top, #1ab5ff, #0e60c5);
+		background: linear-gradient(to bottom, #1ab5ff, #0e60c5);
+		-webkit-box-shadow: #1fd9ff 0px 0px 8px 0px;
+		-moz-box-shadow: #1fd9ff 0px 0px 8px 0px;
+		box-shadow: #1fd9ff 0px 0px 8px 0px;
+		text-shadow: #2565db 1px 1px 1px;
+		font: normal normal bold 20px arial;
+		color: #ffffff;
+		text-decoration: none;
+	}
+		#signup_submit:hover,
+		#signup_submit:focus {
+			border: 1px solid #1071e8;
+			background: #1fd9ff;
+			background: -webkit-gradient(linear, left top, left bottom, from(#1fd9ff), to(#1173ec));
+			background: -moz-linear-gradient(top, #1fd9ff, #1173ec);
+			background: linear-gradient(to bottom, #1fd9ff, #1173ec);
+			color: #ffffff;
+			text-decoration: none;
+		}
+		#signup_submit:active {
+			background: #0e60c5;
+			background: -webkit-gradient(linear, left top, left bottom, from(#0e60c5), to(#0e60c5));
+			background: -moz-linear-gradient(top, #0e60c5, #0e60c5);
+			background: linear-gradient(to bottom, #0e60c5, #0e60c5);
+		}
+	/***************
+	     Sign in
+	****************/
+	.signin_box{
+		position:relative;		
+		margin:100px auto 150px auto;
+		width:1350px;		
+		/*height:500px;*/
+		/*border:solid #D0D0D0 2px;*/
+	}
+	.signin_image{
+		position:absolute;
+		display:inline-block;
+		width:60%;
+		height:550px;
+		overflow:hidden;
+	}
+	.signin_fieldset{
+		position: relative;
+		width:85%;
+		margin: 30px auto 0px auto;
+		font-size: 24px;
+	}
+	.login_border{
+		position:absolute;
+		display:inline-block;
+		right:30px;		
+		width:35%;
+		height:550px;
+		border-radius:5px;		
+		background-color:white;
+		/*border:solid #D0D0D0 2px;*/
+	}
+	.signin_button{
+		position:relative;
+		width:85%;
+		margin: 60px auto 20px auto;
+	}	
+	#login_logo{
+	  text-align:center;
+	  font-size:36px;
+	  margin:50px auto 0px auto;
+	}
+	#forget_password{
+	  color:#0080FF;
+	  font-weight:bold;	 
+	  text-decoration: none;
+	}
+	
+	/***************
+	    Course
+	****************/
+	.top_box_course{
+		position:relative;			
+		background-image:url(../../images/course.jpg);/* from css file*/
+		background-repeat:no-repeat;
+		background-size:cover;
+		margin:0px auto ;
+		height:500px;
+		width:100%;		
+		background-color:white;/*if can not catch image*/
+		box-shadow: #666 0 0 5px;/*image shadow*/			
+	}		
+	.top_box_title{
+		position:relative;
+		top:450px;
+		width:550px;
+		height:70px;
+		margin:0px auto;			
+		text-align:center;
+		background-color:#F2F2F2;
+		line-height:60px;
+		font-size:35px;
+		border-radius:5px;
+		letter-spacing:1px;		
+	}
+	.course_half_box{
+		display: inline-block;	
+		margin:50px auto;
+		width:800px;			
+	}	
+	.course_inner_contentBox{
+		position: relative;		
+		margin: 100px auto ;
+		width:85%;
+		/*border:2px black solid;*/
+	}		
+	.course_inner_bottom{
+		margin:0px auto 5px auto;
+		width:97%;		
+		background-color:white;
+		border:2px white solid;
+		border-radius:5px;	
+		text-align: center;	
+	}
+	.course_bottom{
+		width:100%;	
+		text-align: center;
+	}
+	.learn_more{
+		position:relative;
+		display:inline-block;
+		width:40%;
+		height:60px;
+		line-height:60px;	
+		top:50px;		
+		text-align:center;		
+		border:2px #AAAAAA solid ;
+		border-radius:2px;
+		font-size:  22px;
+	}
+	.buy{
+		position:relative;
+		display:inline-block;		
+		margin-left:50px;
+		width:40%;
+		height:60px;
+		line-height:60px;	
+		top:50px;		
+		text-align:center;		
+		border:2px #AAAAAA solid ;
+		border-radius:2px;
+		font-size: 22px;
+		
+	}
+	.learn_more:hover{
+		background-color: #DDDDDD;
+		opacity: 0.7;	
+		transform:scale(1.1,1.1);
+		transition:0.5s;	
+	}
+	.buy:hover{
+		background-color: #DDDDDD;
+		transition:0.3s;		
+		opacity: 0.9;	
+		transform:scale(1.1,1.1);
+		transition:0.5s;	
+	}	
+	#course_inner_content{
+		width:100%;	
+		height:100px;
+		margin:60px auto 50px auto;
+		text-align:center;	
+		font-size:26px;		
+	}
+	
+	/***************
+	   photo
+	****************/
+	.photo_box{
+		position:relative;		
+		width:97%;	
+		height:100vh;				
+	}	
+	
+	.photo_show{
+		position:relative;
+		display:inline-block;
+		width:72%;
+		height:100%;
+		overflow:hidden;		
+		box-shadow: #666 0 0 10px;
+		border:10px white solid;
+		
+	}	
+		
+	#all{
+		width:400%;
+		height:100%;
+		position:relative;
+	}
+	.photo_title_box{
+		display:inline-block;
+		position:absolute;
+		width:17%;
+		margin-left:6%;
+		margin-top: 20px;
+		height:80px;		
+		text-align:left;
+	}
+	.photo_title{
+		position:relative;
+		display:inline-block;		
+		line-height:30px;
+		font-size:48px;
+		letter-spacing:1.5px;
+		color:#4F4F4F;
+		margin-bottom:10px;
+		font-weight:bold;
+	}
+	.photo_content{
+		position:relative;		
+		font-size:18px;
+		color:#5B5B5B;
+		letter-spacing:1px;
+	}
+	.photo_small_box{
+		display:inline-block;
+		position:absolute;
+		top:180px;
+		margin-left:3%;
+		width:25%;		
+	}		
+	.photo_small{		
+		width:45%;			
+		padding:5px; 		
+	}
+		.photo_small:hover{
+			background:#BEBEBE;		
+			cursor:pointer;
+		}
+	.selected{ /*overwrite define in jquery*/
+		background:#00D3B7;				
+	}
+	.home_photo{
+		position:relative;
+		display:inline-block;
+		font-size:25px;			
+		margin-top:5px;
+		left:10%;
+	}
+	/***************
+	    view course
+	****************/
+	.viewCourseBox{
+		position: relative;
+		top:100px;
+		width:95%;
+		margin:0px auto 200px auto;
+		text-align: center;
+		/*border:2px solid#DDDDDD;*/
+	}
+	.viewCourseTitle{
+		position: relative;
+		top:0px;
+		width:100%;
+		height:50px;
+		font-size: 30px;
+		color:	#0066FF;
+		text-align: center;
+		line-height: 50px;
+		background-color: #77DDFF;
+	}
+	.eachCourseBox{
+		display: inline-block;
+		margin:50px 20px 20px auto;		
+		width:520px;
+		height:650px;
+		border:2px #DDDDDD solid;		
+		background-color:white;
+	}
+	.eachCourseImg{
+		width:90%;
+		margin:20px auto 0px auto;
+		height:250px;
+		overflow: hidden;
+	}
+		.eachCourseImg:hover{		
+			transform:scale(1.1,1.1);
+			transition:0.7s;		
+			overflow:hidden;
+		}	
+	.eachCourseContent{
+		position: relative;
+		margin:20px auto 0px auto;
+		width:90%;
+		height:300px;
+	}
+	.eachCourseTitle{
+		position: relative;
+		height:50px;
+		width:100%;
+		text-align: center;
+		font-size: 36px;
+		color:	#0000FF;
+		margin-bottom: 30px;
+	}
+	.eachCourseContenInner{
+		position: relative;
+		margin:10px auto 10px auto;
+		height:50px;
+		width:50%;
+		text-align: left;
+		font-size: 24px;
+	}
+	.gotoCourse{
+		position: relative;
+		bottom: 20px;
+		margin:0px auto 30px auto;
+		width:40%;
+		height:60px;
+		text-align: center;
+		line-height: 60px;
+		font-size: 28px;
+		background-color:#0066FF ;
+	}
+		.gotoCourse:hover{
+			background-color:#0044BB ;
+			transform:scale(1.1,1.1);
+			transition:0.5s;
+		}
+
+	/***************
+	In the course
+	****************/
+	.course_introduceBox{
+		position: relative;
+		width:80%;
+		margin:150px auto 50px auto;
+	}
+	.course_introduceTitle{
+		position: relative;
+		width:100%;
+		height:50px;
+		text-align: center;
+		font-size: 36px;
+		font-weight: bold;
+		font-family:'微軟正黑體';
+		color: #2894FF;
+		border:  solid 2px 	#0080FF;
+		border-radius: 30px;	
+		letter-spacing:2px;	
+	}
+	.course_introduceContent{
+		position: relative;
+		margin:40px auto 0px auto;
+		width:100%;
+		letter-spacing:1px;
+	}
+	.course_ContentLeft{
+		position: relative;
+		width:30%;
+		float:left;
+		overflow: hidden;
+	}
+	.course_ContentRight{
+		position: relative;
+		width:50%;
+		float:left;
+	}
+	.course_introduceContent_rightTitle{
+		position: relative;
+		margin:0px auto 30px auto;
+		font-size: 42px;
+		text-align: center;
+		font-weight: bold;
+		color:	#3C3C3C;
+	}
+	.course_introduceContent_rightContent{
+		position: relative;
+		margin: 0px auto 20px auto;
+		font-size: 22px;
+		left: 30px;
+	}
+	.teach_title{
+		position: relative;
+		font-size: 32px;
+		color:#0080FF;
+	}
+	.teach_content{
+		position: relative;
+		font-size: 24px;
+		letter-spacing:1px;
+	}
+	.teach_li{
+		position: relative;
+		font-size: 24px;
+	}
+	.teach_ol{
+		position: relative;
+		font-size: 18px;
+		margin: 10px auto 10px auto;
+		letter-spacing:1px;
+	}
+	.python_box{
+		position:relative;
+		width:85%;
+		top:80px;
+		margin:0px auto 150px auto;
+		letter-spacing:1px;
+	}
+
+	/***************
+		User
+	****************/
+	.user_box{
+		position: relative;
+		width:65%;
+		margin: 100px auto 400px auto;
+		opacity: 0.9;
+	}
+		.user_box:hover{
+			opacity: 0.98;
+		}
+	.user_title{
+		position: relative;
+		width:100%;
+		height:50px;
+		margin: 100px auto 50px auto;
+		text-align: center;
+		font-size: 52px;
+	}
+	.user_title2{
+		position: relative;
+		width:100%;
+		height:40px;
+		text-align: center;
+		font-size: 36px;
+		color: #06336b;
+	}
+	.user_box_inner{
+		position: relative;
+		margin-top: 50px;
+		width:100%;		
+		border: 2px solid #a8a8a8;
+		border-radius: 10px;
+		background-color: white;
+	}
+	.user_inner_list{	
+		position: relative;
+		width:80%;
+		margin: 40px auto 40px auto;	
+		border-bottom: 2px solid #a8a8a8;		
+	}
+	.user_list_left{
+		position: relative;
+		display: inline-block;
+		width:25%;	
+		height:50px;
+		margin: 0px auto 0px auto;			
+		font-size: 24px;
+		color: #5f6368;
+	}
+	.user_list_right{
+		position: relative;
+		display: inline-block;
+		width:65%;	
+		height:50px;
+		margin: 0px auto 0px auto;		
+		font-size: 30px;
+		color: black;
+	}	
+	.edit_icon{
+		position: relative;
+		display: inline-block;
+		width:4%;
+		color:black;
+	}
+	/***************
+		edit_page
+	****************/
+
+	.edit_page_box{
+		position: relative;
+		width:45%;
+		margin:100px auto 0px auto;
+	}
+	.edit_page_title{
+		position: relative;
+		padding-left:10px;
+		font-size: 36px;
+	}
+	.edit_page_content{
+		position: relative;
+		margin: -25px auto 10px auto;
+		height:40px;
+		width:100%;
+		font-size: 28px;
+		padding:10px;
+	}
+	.edit_button_box{
+		position: relative;
+		width:30%;
+		left:0%;
+		margin:30px auto 0px auto;
+	}
+	
+	.edit_button{
+		text-align:center;
+		width:100%;
+		height:60px;
+		font-size:18px;
+		color:white;			
+		background-color: 	#0072E3;
+		border-radius:5px;
+	}
+		.edit_button:hover{
+			background-color: #034ef0;
+			transition: 0.3s;
+			cursor:pointer;
+		}
+/***************
+	guestbook
+****************/
+
+.commentBox{
+	width:750px;
+	margin:250px auto 100px auto;
+	text-align: center;
+	background-color: #F0F0F0;
+	padding:50px;
+	opacity: 0.9;
+	border-radius: 5px;
+}
+.comment_td{
+	font-size: 24px;
+	height:50px;
+	width:30%;
+	
+}
+.comment_input{
+	font-size:30px;
+	background-color: white;
+	border: 2px solid 	#9D9D9D;	
+}
+.comment_input:hover, .comment_input:active{	
+	border:2px solid #0080f0;
+}
+.comment_submit {
+	box-shadow:inset 0px -3px 7px 0px #3dc21b;
+	background:linear-gradient(to bottom, #3ae066 5%, #68c934 100%);
+	background-color:#3ae066;
+	border-radius:3px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.comment_submit:hover {
+	background:linear-gradient(to bottom, #68c934 5%, #3ae066 100%);
+	background-color:#68c934;
+}
+.comment_submit:active {
+	position:relative;
+	top:1px;
+}
+.comment_view {
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#2dabf9;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.comment_view:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+.comment_view:active {
+	position:relative;
+	top:1px;
+}
+
+.comment_reset {
+	box-shadow:inset 0px -3px 7px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:3px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.comment_reset:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.comment_reset:active {
+	position:relative;
+	top:1px;
+}
+
+ 
+/***************
+	show_message
+****************/
+
+.showMessageBox{
+	width:1200px;
+	margin:100px auto 100px auto;
+	font-size: 30px;
+	background-color:white;
+	padding: 50px;
+	opacity: 0.93;
+}
+.showMessageBox>a{
+	color:	#2894FF;
+	font-weight: bold;
+}
+
+.addComment {
+	background-color:#79bbff;
+	border-radius:28px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.addComment:hover {
+	background-color:#378de5;
+}
+.addComment:active {
+	position:relative;
+	top:1px;
+}
+.message_up{
+	position:fixed;
+	top:150px;
+	right:100px;
+	color:#66B3FF
+}
+	.message_up:hover{
+		color:#0080FF;
+	}
+
+/***************
+	buy_others
+****************/
+.buyBox{
+	width:850px;
+	margin:200px auto 200px auto;
+	padding:50px;
+	text-align: center;
+	font-size: 34px;
+	background-color:white;
+	opacity: 0.8;
+	border-radius: 50px;
+}
+
+/***************
+	shoppingcart
+****************/
+.cartBox{
+	width:850px;
+	margin:200px auto 200px auto;
+	padding:50px;
+	text-align: center;
+	font-size: 34px;
+	background-color:white;
+	opacity: 0.8;
+	border-radius: 50px;
+
+}
+.buyIt {
+	box-shadow: 3px 4px 0px 0px #f5978e;
+	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	background-color:#f24537;
+	border-radius:15px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.buyIt:hover {
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+	background-color:#c62d1f;
+}
+.buyIt:active {
+	position:relative;
+	top:1px;
+}
